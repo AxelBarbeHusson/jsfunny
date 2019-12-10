@@ -7,14 +7,11 @@
 </head>
 <body>
 <script>
-    let rayon = prompt('Quel rayon ?');
-   let hauteur = prompt('Quelle hauteur ?');
-
-   let resultat = biere(rayon,hauteur);
-
-   if(resultat) alert(resultat);
-   else alert('Paie ta tournée');
+    function afficherMichel() {
+document.getElementById('wrap').innerHTML ='<p>Michel</p>';
+    }
 </script>
-
+<div id="wrap"></div>
+<h1 ondblclick="afficherMichel();">Clique moi</h1>
 </body>
 </html>
