@@ -1,15 +1,13 @@
-
-let message ="<ul>";
-
-for(let i = -1722; i <=2756 ; i++){
-    if(i % 9 === 0){
-        message += '<li>';
-        message += i;
-        message += '</li>';
-
+let valeur = prompt('Veuillez saisir un nombre');
+let msg = '';
+if (!isNaN(valeur)) {
+    if (valeur > 0) {
+        msg = 'Positif';
+    } else if (valeur < 0) {
+        msg = 'Negatif';
+    } else {
+        msg = 'Nul';
     }
-}
-
-message += '</ul>';
-alert('Boujou !');
-document.write(message);
+} else msg = 'Un nombre c\'est un chiffre connard !';
+console.log(msg);
+document.write(msg);
