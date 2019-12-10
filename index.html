@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Js</title>
-    <script src="assets/js/function/isLeapYear.js"></script>
+    <script src="assets/js/function/biere.js"></script>
 </head>
 <body>
 <script>
-    let reponse = prompt('Quelle année ?');
-    if(isLeapYear(reponse)){
-        alert('Michel');
-    }
-    else {
-        alert('Not Michel');
-    }
+    let rayon = prompt('Quel rayon ?');
+   let hauteur = prompt('Quelle hauteur ?');
+
+   let resultat = biere(rayon,hauteur);
+
+   if(resultat) alert(resultat);
+   else alert('Paie ta tournée');
 </script>
 
 </body>
